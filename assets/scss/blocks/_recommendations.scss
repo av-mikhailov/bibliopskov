@@ -1,0 +1,111 @@
+.recommendations {
+    padding-bottom: 64px;
+
+    .recommendations__header {
+        h2 {
+            font-size: 26px;
+            font-family: $font-accent;
+            color: $color-font-primary;
+        }
+    
+        h2::after {
+            content: "";
+            position: relative;
+            display: block;
+            width: 80px;
+            height: 3px;
+            background: $color-accent;
+            margin-top: 8px;
+        }
+        h4 {
+            font-size: 14px;
+            font-family: $font-accent;
+            color: $color-font-primary;
+        }
+
+        h4::after {
+            content: "";
+            position: relative;
+            display: block;
+            width: 100%;
+            height: 1px;
+            background: $color-gray;
+            margin-top: 8px;
+        }
+        a {
+            font-family: $font-accent;
+            color: $color-font-light;
+            text-transform: uppercase;
+            text-decoration: none;
+
+            .bx {
+                font-size: 20px;
+                font-weight: light;
+                padding-right: 2px;
+            }
+        }
+
+        a:hover {
+            color: $color-font-accent;
+        }
+    }
+    .recommendations__body {
+        position: relative;
+
+        .card-img-overlay {
+            background: linear-gradient(180deg, transparent, rgb(52, 58, 64, 0.85));
+            padding: 16px;
+        }
+        .card-title {
+            position: absolute;
+            bottom: 4px;
+            padding-right: 16px;
+        }
+    }
+    .card:hover {
+        top: -5px;
+    
+        .link-underline {
+            background-size: 100% 2px;
+        }
+    }
+    
+    @media screen and (max-width: 500px) {
+        .recommendations__header {
+            h2 {
+                font-size: 20px;
+            }
+
+            h4 {
+                font-size: 12px;
+            }
+
+            /* h4::after {
+                content: "";
+                position: absolute;
+                display: block;
+                width: 156px;
+                height: 1px;
+                background: $color-gray;
+                margin-top: 10px;
+            } */
+
+            a {
+                .bx {
+                    font-size: 16px;
+                    font-weight: light;
+                    padding-right: 2px;
+                }
+            }
+        }
+        .recommendations__body {
+            .card-img-overlay {
+                padding: 8px;
+            }
+            .card-title {
+                font-size: 14px;
+                line-height: 1.2;
+            }
+        }
+    }
+}

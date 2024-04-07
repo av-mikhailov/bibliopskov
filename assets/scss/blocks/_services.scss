@@ -1,0 +1,107 @@
+.services {
+
+    padding: 64px 0px 64px 0px;
+
+    a {
+        text-decoration: none;
+    }
+
+    .card {
+        padding: 32px;
+        background: #fff;
+        height: 100%;
+        min-height: 260px;
+        border-radius: 8px;
+        border: none;
+        box-shadow: 2px 2px 25px #6e7b8324;
+        position: relative;
+        top: 0;
+        transition: top ease 0.5s;
+
+        .icon {
+            width: 64px;
+            height: 64px;
+            position: relative;
+            margin-bottom: 16px;
+            background: $color-bg-gray;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* .icon::before {
+            position: absolute;
+            content: "";
+            height: 100%;
+            width: 100%;
+            background: #eeeeee;
+            border-radius: 50px;
+            z-index: 1;
+            top: 10px;
+            right: -20px;
+            transition: 0.3s;
+        } */
+    }
+
+    .card-body {
+        padding: 0px;
+
+        h4 {
+            font-family: $font-accent;
+            color: $color-font-primary;
+            padding-bottom: 20px;
+        }
+
+        h4::after {
+            content: "";
+            position: absolute;
+            display: block;
+            width: 80px;
+            height: 3px;
+            background: $color-bg-gray;
+            margin-top: 10px;
+        }
+
+        p {
+            color: $color-font-light;
+        }
+    }
+
+    .card:hover {
+        top: -5px;
+        
+        .icon {
+            background: $color-main;
+        }
+        
+        h4::after {
+            background: $color-accent;
+        }
+    }
+
+    @media screen and (max-width: 500px) {
+        .card {
+            padding: 16px;
+            min-height: 150px;
+
+            img {
+                width: 24px;
+                height: 24px;
+            }
+            .icon {
+                width: 48px;
+                height: 48px;
+            }
+        }
+
+        .row {
+            --bs-gutter-y: 1rem;
+            --bs-gutter-x: 1rem;
+        }
+
+        h4 {
+            font-size: 1rem;
+        }
+    }
+}

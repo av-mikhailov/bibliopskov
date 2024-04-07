@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Централизованная библиотечная система города Пскова</title>
+    <link rel="stylesheet" href="./assets/vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/vendor/boxicons/css/boxicons.min.css">
+    <link rel="stylesheet" href="./assets/vendor/bootstrap-icons/font/bootstrap-icons.min.css">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" /> -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- <link rel="icon" href="./favicon.ico" type="image/x-icon"> -->
+</head>
+<body>
+    <header class="header">
+        <div class="header__top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-9">
+                        <a href="tel:+7 8112 56-01-82" class="info info--phone pe-3"><i class='bx bx-phone-call'></i> 8 (8112) 56-01-82</a>
+                        <a href="mailto:admin@bibliopskov.ru" class="info info--mail pe-3"><i class='bx bx-envelope'></i> pskov-cbs@bibliopskov.ru</a>
+                        <a href="" class="info info--map"><i class='bx bx-map'></i> Псков, ул. Конная, 6</a>
+                    </div>
+                    <div class="col-12 col-lg-3 text-lg-end pe-0 d-none d-lg-block">
+                        <a href="" class="info info--link"><i class='bx bx-link-external'></i> Старая версия сайта</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header__middle">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <a href="/index.html" class="logo align-items-center">
+                            <span class="logo__img"><img src="./assets/img/icons/logo.svg"></span>
+                            <span class="logo__name">Централизованная<br> библиотечная система<br> города Пскова</span>
+                        </a>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-5 d-none d-md-block">
+                        <form role="search" method="get">
+                            <div class="input-group">
+                                <input type="text" class="form-control" placeholder="Поиск по сайту" aria-label="Поиск по сайту" aria-describedby="button-search">
+                                <button class="btn btn-outline-secondary btn-search-custom" type="button" id="button-search"><img src="./assets/img/icons/search.svg"></button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-12 col-md-1 d-none d-lg-block text-lg-end">
+                        <a href="" class="header__middle--flag"><img src="./assets/img/icons/flag.svg"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header__bottom">
+            <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+                <div class="container">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Bibliopskov.ru | Меню сайта</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav justify-content-start flex-grow-1 pe-3">
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        О ЦБС
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Общие сведения</a></li>
+                                        <li><a class="dropdown-item" href="#">Контакты и руководство</a></li>
+                                        <li><a class="dropdown-item" href="#">Официальные документы</a></li>
+                                        <li><a class="dropdown-item" href="#">Проекты</a></li>
+                                        <li><a class="dropdown-item" href="#">Вакансии</a></li>
+                                        <li><a class="dropdown-item" href="#">Обратная связь</a></li>
+                                        <li><a class="dropdown-item" href="#">О работе с детьми</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Библиотеки
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="library.html">Центральная городская библиотека</a></li>
+                                        <li><a class="dropdown-item" href="#">Библиотека - Центр детского чтения
+                                        </a></li>
+                                        <li><a class="dropdown-item" href="#">Библиотека - Центр общения и информации им. И. Н. Григорьева
+                                        </a></li>
+                                        <li><a class="dropdown-item" href="#">Историко-краеведческая библиотека им. И. И. Василева
+                                        </a></li>
+                                        <li><a class="dropdown-item" href="#">Библиотека "Родник" им. С. А. Золотцева
+                                        </a></li>
+                                        <li><a class="dropdown-item" href="#">Библиотека микрорайона Любятово "БиблиоЛюб"
+                                        </a></li>
+                                        <li><a class="dropdown-item" href="#">Детская экологическая библиотека "Радуга"
+                                        </a></li>
+                                        <li><a class="dropdown-item" href="#">Библиотека "Диалог"
+                                        </a></li>
+                                        <li><a class="dropdown-item" href="#">Библиотека - общественный центр микрорайона Псковкирпич
+                                        </a></li>
+                                        <li><a class="dropdown-item" href="#">Библиотека микрорайона Овсище</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Читателям
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Как записаться?</a></li>
+                                        <li><a class="dropdown-item" href="#">Что почитать?</a></li>
+                                        <li><a class="dropdown-item" href="#">Услуги</a></li>
+                                        <li><a class="dropdown-item" href="#">Клубы и объединения</a></li>
+                                        <li><a class="dropdown-item" href="#">Центр правовой информации</a></li>
+                                        <!-- <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li><a class="dropdown-item" href="#">Детям</a></li> -->
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Коллегам
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Новости для коллег</a></li>
+                                        <li><a class="dropdown-item" href="#">Профессиональные издания</a></li>
+                                        <li><a class="dropdown-item" href="#">Документы</a></li>
+                                        <li><a class="dropdown-item" href="#">Полезная информация</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Ресурсы
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Псков на ладони</a></li>
+                                        <li><a class="dropdown-item" href="#">Литературные премии</a></li>
+                                        <li><a class="dropdown-item" href="#">Виртуальные выставки</a></li>
+                                        <li><a class="dropdown-item" href="#">Календари знаменательных и памятных дат</a></li>
+                                        <li><a class="dropdown-item" href="#">Электронные библиотеки</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Каталоги
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Электронный каталог</a></li>
+                                        <li><a class="dropdown-item" href="#">Электронный каталог статей</a></li>
+                                        <li><a class="dropdown-item" href="#">Фонд электронных документов</a></li>
+                                        <li><a class="dropdown-item" href="#">Каталог редких книг</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        События
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Афиша мероприятий</a></li>
+                                        <li><a class="dropdown-item" href="#">Новости</a></li>
+                                        <li><a class="dropdown-item" href="#">Выставки</a></li>
+                                        <li><a class="dropdown-item" href="#">Акции и конкурсы</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <div class="d-block d-lg-none mt-5">
+                                <span class="logo__img"><img src="./assets/img/icons/logo.svg"></span>
+                                <p class="mt-3">Муниципальное автономное учреждение культуры «Централизованная библиотечная система» города Пскова</p>
+                                <div>
+                                    <a href="tel:+7 8112 56-01-82" class="pe-3"><i class='bx bx-phone-call'></i> 8 (8112) 56-01-82</a>
+                                </div>
+                                <div>
+                                    <a href="mailto:admin@bibliopskov.ru" class="pe-3"><i class='bx bx-envelope'></i> pskov-cbs@bibliopskov.ru</a>
+                                </div>
+                                <div>
+                                    <a href=""><i class='bx bx-map'></i> Псков, ул. Конная, 6</a>
+                                </div>
+                                <br>
+                                <div>
+                                    <a href="" class=""><i class='bx bx-link-external'></i> Старая версия сайта</a>
+                                </div>
+                                <form role="search" method="get">
+                                    <div class="input-group mt-4">
+                                        <input type="text" class="form-control" placeholder="Поиск по сайту" aria-label="Поиск по сайту" aria-describedby="button-search">
+                                        <button class="btn btn-outline-green btn-search-custom" type="button" id="button-search"><img src="./assets/img/icons/search.svg"></button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="breadcrumbs">
+            <div class="container">
+                <ol>
+                    <li>Главная <i class='bx bxs-chevron-right ps-2'></i></li>
+                    <li>Афиша мероприятий</li>
+                </ol>
+            </div>
+        </section>
+        <section class="content">
+            <div class="container">
+                <div class="title">
+                    <div class="row">
+                        <div class="col-md-2 text-start d-none d-lg-block">
+                            <img src="./assets/img/icons/books-1.svg">
+                        </div>
+                        <div class="col-md-8 d-flex align-items-center justify-content-center">
+                            <h3>Афиша мероприятий</h3>
+                        </div>
+                        <div class="col-md-2 text-end d-none d-lg-block">
+                            <img src="./assets/img/icons/books-2.svg">
+                        </div>
+                    </div>
+                </div>
+                <div class="row events">
+                    <div class="col-12 col-md-9 events__body">
+                        <div class="row row-cols-2 row-cols-md-2 row-cols-lg-3 g-4 mb-5">
+                            <div class="col">
+                                <a href="events-single.html">
+                                    <div class="card h-100">
+                                        <img src="./assets/img/events/event-1.jpg" class="card-img-top">
+                                        <div class="card-body">
+                                            <h5 class="card-title">6 октября, 17:00</h5>
+                                            <p class="card-text"><span class="link-underline">Литературно-музыкальный вечер «Аккорды осени моей»</span></p>
+                                        </div>
+                                        <div class="card-footer">
+                                            <small>Библиотека "Родник" им. С. А. Золотцева</small>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a href="">
+                                    <div class="card h-100">
+                                        <img src="./assets/img/events/event-2.jpg" class="card-img-top">
+                                        <div class="card-body">
+                                            <h5 class="card-title">6 октября, 17:00</h5>
+                                            <p class="card-text"><span class="link-underline">Литературно-музыкальный вечер «Аккорды осени моей»</span></p>
+                                        </div>
+                                        <div class="card-footer">
+                                            <small>Центральная городская библиотека</small>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a href="">
+                                    <div class="card h-100">
+                                        <img src="./assets/img/events/event-3.jpg" class="card-img-top">
+                                        <div class="card-body">
+                                            <h5 class="card-title">6 октября, 17:00</h5>
+                                            <p class="card-text"><span class="link-underline">Литературно-музыкальный вечер «Аккорды осени моей»</span></p>
+                                        </div>
+                                        <div class="card-footer">
+                                            <small>Библиотека - Центр общения и информации им. И. Н. Григорьева</small>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a href="">
+                                    <div class="card h-100">
+                                        <img src="./assets/img/events/event-4.jpg" class="card-img-top">
+                                        <div class="card-body">
+                                            <h5 class="card-title">6 октября, 17:00</h5>
+                                            <p class="card-text"><span class="link-underline">Литературно-музыкальный вечер «Аккорды осени моей»</span></p>
+                                        </div>
+                                        <div class="card-footer">
+                                            <small>Историко-краеведческая библиотека им. И. И. Василева</small>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-3 ps-lg-4">
+                        <h4>Рубрики</h4>
+                        <!-- <div class="list-group">
+                            <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
+                              The current link item
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action">A second link item</a>
+                            <a href="#" class="list-group-item list-group-item-action">A third link item</a>
+                            <a href="#" class="list-group-item list-group-item-action">A fourth link item</a>
+                            <a class="list-group-item list-group-item-action disabled" aria-disabled="true">A disabled link item</a>
+                          </div> -->
+                        <div class="content__nav mb-5" id="tocContents">
+                            <nav id="TableOfContents">
+                                <ul>
+                                    <li><a href="" class="active">Текущие мероприятия</a></li>
+                                    <li><a href="" class="">Завершенные мероприятия</a></li>
+                                    <li><a href="" class="">Мероприятия для детей</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <h4>Библиотеки</h4>
+                        <div class="list-group">
+                            <a href="#" class="list-group-item list-group-item-action">Центральная городская библиотека</a>
+                            <a href="#" class="list-group-item list-group-item-action">Библиотека - Центр детского чтения</a>
+                            <a href="#" class="list-group-item list-group-item-action">Библиотека - Центр общения и информации им. И. Н. Григорьева</a>
+                            <a href="#" class="list-group-item list-group-item-action">Историко-краеведческая библиотека им. И. И. Василева</a>
+                            <a href="#" class="list-group-item list-group-item-action">Библиотека "Родник" им. С. А. Золотцева</a>
+                            <a href="#" class="list-group-item list-group-item-action">Детская экологическая библиотека "Радуга"</a>
+                            <a href="#" class="list-group-item list-group-item-action">Библиотека микрорайона Любятово "БиблиоЛюб"</a>
+                            <a href="#" class="list-group-item list-group-item-action">Детская библиотека "ЛиК"</a>
+                            <a href="#" class="list-group-item list-group-item-action">Библиотека микрорайона Овсище</a>
+                            <a href="#" class="list-group-item list-group-item-action">Библиотека "Диалог"</a>
+                            <a href="#" class="list-group-item list-group-item-action">Библиотека - общественный центр микрорайона Псковкирпич</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-4 pb-3">
+                        <h4>Контакты</h4>
+                        <p>Муниципальное автономное учреждение культуры «Централизованная библиотечная система» города Пскова</p>
+                        <div>
+                            <a href="" class="info info--tel"><i class='bx bx-phone-call'></i> 8 (8112) 56-01-82</a>
+                        </div>
+                        <div>
+                            <a href="" class="info info--mail"><i class='bx bx-envelope'></i> pskov-cbs@bibliopskov.ru</a>
+                        </div>
+                        <div>
+                            <a href="" class="info info--map"><i class='bx bx-map'></i> Псков, ул. Конная, 6</a>
+                        </div>
+                        <div class="social-links d-flex pb-3">
+                            <a href="#"><i class='bx bxl-vk'></i></a>
+                            <a href="#"><i class='bx bxl-youtube'></i></a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-3 pb-3">
+                        <h4>Обратная связь</h4>
+                        <ul>
+                            <li><i class='bx bxs-chevron-right'></i> <a href="">Отзыв о работе библиотек</a></li>
+                            <li><i class='bx bxs-chevron-right'></i> <a href="">Оценка качества услуг</a></li>
+                            <li><i class='bx bxs-chevron-right'></i> <a href="">Независимая оценка качества</a></li>
+                            <li><i class='bx bxs-chevron-right'></i> <a href="">Краеведческая справочная служба</a></li>
+                            <li><i class='bx bxs-chevron-right'></i> <a href="">Комплектуем фонд вместе</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-lg-3 pb-3 ps-lg-5">
+                        <h4>Навигация</h4>
+                        <ul>
+                            <li><i class='bx bxs-chevron-right'></i> <a href="" target="_blank">О ЦБС</a></li>
+                            <li><i class='bx bxs-chevron-right'></i> <a href="" target="_blank">Библиотеки</a></li>
+                            <li><i class='bx bxs-chevron-right'></i> <a href="" target="_blank">Читателям</a></li>
+                            <li><i class='bx bxs-chevron-right'></i> <a href="" target="_blank">Коллегам</a></li>
+                            <li><i class='bx bxs-chevron-right'></i> <a href="" target="_blank">События</a></li>
+                            <li><i class='bx bxs-chevron-right'></i> <a href="" target="_blank">Каталоги</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-lg-2 pb-3">
+                        <h4>Рекомендуем</h4>
+                        <ul>
+                            <li><i class='bx bxs-chevron-right'></i> <a href="https://bibliopskov.ru/" target="_blank">pskovkid.ru</a></li>
+                            <li><i class='bx bxs-chevron-right'></i> <a href="http://bibliogames.ru/" target="_blank">bibliogames.ru</a></li>
+                            <li><i class='bx bxs-chevron-right'></i> <a href="http://nevsky-pskov.ru/" target="_blank">nevsky-pskov.ru</a></li>
+                            <li><i class='bx bxs-chevron-right'></i> <a href="http://book-apple.ru/" target="_blank">book-apple.ru</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <div class="container">
+                <p>© 2004–2024, «Централизованная библиотечная система города Пскова»</p>
+            </div>
+        </div>
+    </footer>
+    <script src="./assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

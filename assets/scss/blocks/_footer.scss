@@ -1,0 +1,146 @@
+.footer {
+    background-color: $color-main;
+    color: $color-font-white;
+    font-weight: 400;
+
+    .footer__top {
+        padding: 48px 0px 32px 0px;
+        box-shadow: 0 0 5px rgb(0 0 0 / 30%);
+
+        h4 {
+            font-size: 24px;
+            font-family: $font-accent;
+            color: $color-font-white;
+            padding-bottom: 1rem;
+        }
+
+        h4::after {
+            content: "";
+            position: absolute;
+            display: block;
+            width: 80px;
+            height: 2px;
+            background: $color-accent;
+            margin-top: 5px;
+        }
+
+        a {
+            color: $color-font-white;
+        }
+        a:hover {
+            color: $color-font-accent;
+        }
+        a:link {
+            text-decoration: none;
+        }
+
+        .bx {
+            color: $color-font-accent;
+            font-size: 16px;
+            font-weight: light;
+            padding-right: 2px;
+            vertical-align: -0.125em;
+        }
+
+        /* .info {
+            position: relative;
+            font-size: 13px;
+            color: $color-font-white;
+        
+            &--tel, &--mail, &--map, &--site {
+                padding-left: 24px;
+                padding-right: 1rem;
+        
+                &::before {
+                    content: "";
+        
+                    position: absolute;
+                    left: 0px;
+                    top: 50%;
+                    width: 20px;
+                    height: 20px;
+                    transform: translate(0%, -50%);
+        
+                    background-repeat: no-repeat;
+                    background-position: center;
+                }
+            }
+        
+            &--tel::before {
+                background-image: url('./../img/icons/phone_in_talk.svg');
+            }
+            &--mail::before {
+                background-image: url('./../img/icons/mail.svg');
+            }
+            &--map::before {
+                background-image: url('./../img/icons/location_on.svg');
+            }
+        } */
+    
+        .social-links {
+            padding-top: 24px;
+    
+            a {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                border: 1px solid $color-accent;
+                font-size: 18px;
+                color: $color-accent;
+                margin-right: 5px;
+                transition: 0.3s;
+            }
+            a:hover {
+                background-color: $color-accent;
+
+                .bx {
+                    color: $color-main;
+                }
+            }
+        }
+    
+       /*  a {
+            color: $color-font-white;
+            text-decoration: none;
+        } */
+    
+        ul {
+            list-style: none;
+            padding-left: 0rem;
+        }
+    
+        ul i {
+            padding-right: 2px;
+            color: $color-accent;
+            font-size: 16px;
+            line-height: 1;
+        }
+    }
+    .footer__bottom {
+        padding: 18px 0px 8px 0px;
+    }
+    @media screen and (max-width: 500px) {
+        .footer__top {
+            h4 {
+                font-size: 20px;
+                font-family: $font-accent;
+                color: $color-font-white;
+                padding-bottom: 16px;
+            }
+            p {
+                font-size: 14px;
+            }
+            ul {
+                font-size: 14px;
+            }
+        }
+        .footer__bottom {
+            p {
+                font-size: 14px;
+            }
+        }
+    }
+}
