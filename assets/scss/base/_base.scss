@@ -694,21 +694,24 @@ a {
         font-weight: 300;
         background-color: $color-main;
     }
-    .content__header {
-        padding-top: 24px;
-    
-        h1 {
-            font-size: 1.5rem;
+    .content {
+        .content__header {
+            padding-top: 24px;
+        
+            h1 {
+                font-size: 1.5rem;
+            }
+            h1::after {
+                content: "";
+                position: relative;
+                display: block;
+                width: 80px;
+                height: 3px;
+                background: $color-accent;
+                margin-top: 8px;
+            }
         }
-        h1::after {
-            content: "";
-            position: relative;
-            display: block;
-            width: 80px;
-            height: 3px;
-            background: $color-accent;
-            margin-top: 8px;
-        }
+
     }
     .event-card {
         position: relative;
