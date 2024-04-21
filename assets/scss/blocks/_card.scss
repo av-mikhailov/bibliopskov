@@ -1,0 +1,627 @@
+.card {
+    position: relative;
+    top: 0;
+    transition: top ease 0.5s;
+    box-shadow: 2px 2px 25px #6e7b8324;
+    border: none;
+    border-radius: 8px;
+
+    .card-img-top {
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+    }
+
+    .card-footer {
+        border-top: 1px solid #E0E0E0;
+        color: $color-font-light;
+        background-color: #ffffff;
+    }
+
+    &:hover {
+        top: -5px;
+
+        .link-underline {
+            background-size: 100% 2px;
+        }
+    }
+
+    @media screen and (max-width: 500px) {
+        .card-img-overlay {
+            padding: 8px;
+        }
+
+        .card-title {
+            font-size: 16px;
+        }
+        .card-text {
+            font-size: 14px;
+            line-height: 1.2;
+        }
+        .card-footer {
+            font-size: 12px;
+            line-height: 1.2;
+        }
+    }
+
+    &--appointment {
+        background-color: #356169;
+        color: #ffffff;
+        margin-left: -64px;
+        padding: 56px;
+
+        .card-title {
+            font-size: 22px;
+            font-family: $font-main;
+            text-transform: uppercase;
+            padding-bottom: 24px;
+        }
+
+        li {
+            color: $color-accent;
+        }
+    
+        li span {
+            color: #ffffff;
+        }
+
+        &:hover {
+            top: 0px;
+        }
+
+        @media screen and (max-width: 500px) {
+            margin-left: 0px;
+            padding: 16px 16px 16px 16px;
+
+            .card-title {
+                font-size: 18px;
+                padding-bottom: 16px;
+            }
+            h3 {
+                font-size: 18px;
+            }
+            li span {
+                font-size: 14px;
+            }
+        }
+    }
+
+    &--book {
+        overflow: hidden;
+        
+        img {
+            padding: 48px;
+            padding-bottom: 0px;
+            transition: all 0.5s ease-in-out;
+            position: relative;
+            z-index: 1;
+        }
+
+        .card-author {
+            color: $color-font-light;
+        }
+
+        &:hover {
+            top: 0px;
+
+            img {
+                transform: scale(1.02);
+            }
+        }
+
+        @media screen and (max-width: 500px) {
+            img {
+                padding: 16px;
+                padding-bottom: 0px;
+            }
+            .card-author {
+                font-size: 14px;
+            }
+            .card-text {
+                font-size: 14px;
+            }
+        }
+    }
+
+    &--event {
+        position: relative;
+        border: 8px solid #EEEFF1;
+        border-radius: 8px;
+        padding: 32px;
+        height: 100%;
+        box-shadow: none;
+
+        .card-title {
+            font-size: 32px;
+            color: $color-font-accent;
+            padding: 0px;
+        }
+        
+        .card-body {
+            font-size: 18px;
+            padding: 40px 0px 0px 0px;
+        }
+        
+        .card-footer {
+            font-size: 18px;
+            position: absolute;
+            bottom: 0;
+            padding: 0px;
+            padding-bottom: 16px;
+            border-top: none;
+        
+            a {
+                color: #448F96;
+            }
+            a:hover {
+                color: $color-font-accent;
+            }
+        }
+
+        &:hover {
+            top: 0px;
+        }
+
+        @media (min-width: 992px) and (max-width: 1200px) {
+            .card-title {
+                font-size: 24px;
+            }
+            
+            .card-body {
+                font-size: 16px;
+                padding:  0px 0px 0px 0px;
+                line-height: 1;
+            }
+            
+            .card-footer {
+                font-size: 16px;
+            }
+        }
+
+        @media (min-width: 501px) and (max-width: 991px) {
+            margin-top: 16px;
+        }
+
+        @media screen and (max-width: 500px) {
+            padding: 16px;
+            margin-top: 0px;
+
+            .card-title {
+                font-size: 24px;
+            }
+            
+            .card-body {
+                font-size: 16px;
+                padding-top: 8px;
+                line-height: 1;
+            }
+            
+            .card-footer {
+                font-size: 16px;
+                position: relative;
+                padding-bottom: 0px;
+            }
+        }
+    }
+
+    &--hero {
+        color: $color-font-white;
+        background: transparent;
+        border: none;
+        box-shadow: none;
+
+        .card-title {
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        .card-text {
+            font-size: 14px;
+            font-weight: 400;
+            color: #f2f3f0;
+        }
+        @media (min-width: 992px) and (max-width: 1399px) {
+            .card-title {
+                font-size: 14px;
+            }
+            .card-text {
+                font-size: 13px;
+            }
+        }
+        @media (min-width: 768px) and (max-width: 991px) {
+            height: 100%;
+        }
+        @media screen and (max-width: 767px) {
+            height: 100%;
+        }
+        @media screen and (max-width: 500px) {
+            .card-body {
+                padding-left: 8px;
+
+                .card-title {
+                    font-weight: 500;
+                }
+                .card-text {
+                    font-size: 13px;
+                }
+            }
+        }
+        
+    }
+
+    &--info {
+        text-align: center;
+
+        .card-body {
+            padding: 24px;
+
+            h4 {
+                font-size: 22px;
+                font-family: $font-main;
+                font-weight: 500;
+                margin-left: -5px;
+            }
+            h4::after {
+                display: none;
+            }
+            p {
+                font-size: 16px;
+                font-family: $font-main;
+                color: $color-font-primary;
+            }
+        }
+        
+        &:hover {
+            top: 0px;
+        }
+    }
+
+    &--library {
+        position: relative;
+        border: 8px solid #EEEFF1;
+        background-color: #EEEFF1;
+        border-radius: 8px;
+        padding: 16px;
+        height: 500px;
+
+        a {
+            text-decoration: none;
+        }
+
+        h2 {
+            font-size: 24px;
+            font-family: $font-accent;
+            color: $color-font-primary;
+        }
+    
+        h2::after {
+            content: "";
+            position: relative;
+            display: block;
+            width: 40px;
+            height: 3px;
+            background: $color-accent;
+            margin-top: 4px;
+        }
+
+        .social-links {
+            padding-top: 8px;
+    
+            a {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 32px;
+                height: 32px;
+                border-radius: 50%;
+                border: 1px solid $color-main;
+                font-size: 18px;
+                color: $color-main;
+                margin-right: 5px;
+                transition: 0.3s;
+            }
+            a:hover {
+                background-color: $color-main;
+
+                .bx {
+                    color: $color-accent;
+                }
+            }
+        }
+
+        &:hover {
+            top: 0px;
+        }
+
+        @media (min-width: 1200px) and (max-width: 1399px) {
+            font-size: 14px;
+
+            h2 {
+                font-size: 22px;
+            }
+        }
+
+        @media (min-width: 992px) and (max-width: 1199px) {
+            font-size: 13px;
+            line-height: 1.1;
+            padding: 8px;
+            height: 400px;
+
+            h2 {
+                font-size: 18px;
+            }
+        }
+
+        @media (min-width: 768px) and (max-width: 991px) {
+            margin-top: 24px;
+        }
+
+        @media (min-width: 501px) and (max-width: 767px) {
+            margin-top: 16px;
+        }
+
+        @media screen and (max-width: 500px) {
+            height: 500px;
+            font-size: 14px;
+            margin-top: 8px;
+
+            h2 {
+                font-size: 22px;
+            }
+        }
+    }
+
+    &--news {
+        img {
+            border-radius: 8px;
+        }
+
+        .card-img-overlay:before {
+            content: "";
+            position: absolute;
+            height: 60%;
+            width: 100%;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), to(#262C2D));
+            background-image: linear-gradient(180deg, transparent, #262C2D);
+            z-index: 1;
+            border-radius: 8px;
+        }
+
+        .card-title {
+            font-size: 16px;
+            font-weight: 400;
+            position: absolute;
+            bottom: 0;
+            z-index: 2;
+            justify-content: start;
+            padding-bottom: 0.5rem;
+            padding-right: 0.5rem;
+        }
+
+        @media screen and (max-width: 500px) {
+            .card-title {
+                font-size: 12px;
+                font-weight: 400;
+                line-height: 1.2;
+                position: absolute;
+                bottom: 0;
+                z-index: 2;
+                justify-content: start;
+                padding-bottom: 0px;
+            }
+        }
+    }
+
+    &--recommendation {
+        .card-img-overlay {
+            background: linear-gradient(180deg, transparent, rgb(52, 58, 64, 0.85));
+            padding: 16px;
+        }
+        .card-title {
+            position: absolute;
+            bottom: 4px;
+            padding-right: 16px;
+        }
+        @media screen and (max-width: 500px) {
+            .card-img-overlay {
+                padding: 8px;
+            }
+            .card-title {
+                font-size: 14px;
+                line-height: 1.2;
+            }
+        }
+    }
+
+    &--reference {
+        img {
+            border-radius: 8px;
+        }
+        button {
+            color: $color-font-primary;
+            border: 1px solid $color-main;
+        }
+        button:hover {
+            color: $color-font-white;
+            background-color: $color-main;
+            border: 1px solid $color-main;
+        }
+        &:hover {
+            top: 0px;
+        }
+        @media screen and (max-width: 500px) {
+            .card-body {
+                padding-top: 0px;
+
+                .card-title {
+                    font-size: 16px;
+                }
+                .card-text {
+                    font-size: 14px;
+                }
+
+                .btn {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+
+    &--schedule {
+        padding: 72px 56px 56px 24px;
+        background-color: #356169;
+
+        ul li {
+            height: 80%;
+        }
+
+        li {
+            color: $color-accent;
+        }
+    
+        li span {
+            color: #ffffff;
+        }
+
+        &:hover {
+            top: 0px;
+        }
+
+        @media screen and (max-width: 500px) {
+            padding: 24px 16px 16px 16px;
+
+            ul li {
+                height: 60%;
+            }
+        
+            li span {
+                h5 {
+                    font-size: 18px;
+                }
+                p {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+
+    &--service {
+        padding: 32px;
+        background: #fff;
+        height: 100%;
+        min-height: 260px;
+        border-radius: 8px;
+        border: none;
+        box-shadow: 2px 2px 25px #6e7b8324;
+        position: relative;
+        top: 0;
+        transition: top ease 0.5s;
+
+        .icon {
+            width: 64px;
+            height: 64px;
+            position: relative;
+            margin-bottom: 16px;
+            background: $color-bg-gray;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .card-body {
+            padding: 0px;
+    
+            h4 {
+                font-family: $font-accent;
+                color: $color-font-primary;
+                padding-bottom: 20px;
+            }
+    
+            h4::after {
+                content: "";
+                position: absolute;
+                display: block;
+                width: 80px;
+                height: 3px;
+                background: $color-bg-gray;
+                margin-top: 10px;
+            }
+    
+            p {
+                color: $color-font-light;
+            }
+        }
+
+        &:hover {
+            top: -5px;
+            
+            .icon {
+                background: $color-main;
+            }
+            
+            h4::after {
+                background: $color-accent;
+            }
+        }
+
+        @media (min-width: 768px) and (max-width: 991px) {
+            .card-title {
+                font-size: 20px;
+            }
+        }
+
+        @media screen and (max-width: 500px) {
+            padding: 16px;
+            min-height: 150px;
+    
+            img {
+                width: 24px;
+                height: 24px;
+            }
+            
+            .icon {
+                width: 48px;
+                height: 48px;
+            }
+        }
+    }
+
+    &--site {
+        img {
+            border-radius: 8px;
+        }
+
+        .card-img-overlay:before {
+            content: "";
+            position: absolute;
+            height: 60%;
+            width: 100%;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), to(#ffa2443c));
+            background-image: linear-gradient(180deg, transparent, #ffa2443c);
+            z-index: 1;
+            border-radius: 8px;
+        }
+
+        .card-title {
+            font-size: 16px;
+            font-weight: 400;
+            position: absolute;
+            bottom: 0;
+            z-index: 2;
+            justify-content: start;
+            padding-bottom: 0.5rem;
+            padding-right: 0.5rem;
+        }
+
+        @media screen and (max-width: 500px) {
+            
+        }
+    }
+}
+

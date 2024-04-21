@@ -203,7 +203,7 @@
             height: auto;
 
             .logo {
-                padding: 14px 0px 16px 0px;
+                padding: 28px 0px 28px 0px;
 
                 .logo__name {
                     font-size: 16px;
@@ -294,6 +294,15 @@
             }
         }
     }
+
+    @media screen and (max-width: 768px) {
+        .header__middle {
+            .logo {
+                padding: 14px 0px 16px 0px;
+            }
+        }
+    }
+
     @media screen and (max-width: 500px) {
         .dropdown-menu {
             border: 1px solid $color-gray;

@@ -1,5 +1,5 @@
 .library {
-    .carousel {
+    /* .carousel {
         img {
             width: 100%;
             height: 500px;
@@ -14,9 +14,9 @@
         .carousel-inner {
             border-radius: 8px !important;
         }
-    }
+    } */
 
-    .library-card {
+    /* .library-card {
         position: relative;
         border: 8px solid #EEEFF1;
         background-color: #EEEFF1;
@@ -68,7 +68,7 @@
                 }
             }
         }
-    }
+    } */
 
     .list-group a {
         text-decoration: none;
@@ -90,22 +90,22 @@
     }
 
     @media screen and (max-width: 767px) {
-        .carousel {
+        /* .carousel {
             img {
                 width: 100%;
                 height: 400px;
             }
-        }
+        } */
     }
 
     @media screen and (max-width: 500px) {
-        .carousel {
+        /* .carousel {
             img {
                 width: 100%;
                 height: 300px;
             }
-        }
-        .library-card {
+        } */
+        /* .library-card {
             height: 500px;
             font-size: 14px;
             margin-top: 8px;
@@ -113,7 +113,7 @@
             h2 {
                 font-size: 22px;
             }
-        }
+        } */
         .row {
             --bs-gutter-y: 1rem;
             --bs-gutter-x: 1rem;
@@ -121,21 +121,21 @@
     }
 
     @media (min-width: 768px) and (max-width: 991px) {
-        .carousel {
+        /* .carousel {
             img {
                 width: 100%;
                 height: 400px;
             }
-        }
+        } */
     }
 
 
     @media (min-width: 992px) and (max-width: 1199px) {
-        .carousel {
+        /* .carousel {
             img {
                 width: 100%;
                 height: 400px;
             }
-        }
+        } */
     }
 }

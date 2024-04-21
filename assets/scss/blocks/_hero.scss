@@ -8,41 +8,8 @@
         top: 0px;
     }
 
-    .carousel-inner {
-
-        img {
-            max-height: 400px;
-            border-radius: 8px;
-        }
-    }
-
-    .carousel-caption {
-        position: absolute;
-        top: 3%;
-        left: 5%;
-        text-align: left;
-        width: 50%;
-        color: $color-font-primary;
-    }
-
-    .carousel-indicators {
-        margin-left: 4%;
-    }
-
-    .carousel .carousel-indicators button {
-        width: 12px;
-        height: 12px;
-        border-radius: 50%;
-        background-color: $color-accent;
-    }
-
-    .carousel ul {
-        padding-left: 1rem;
-    }
-
     .hero__notice {
         overflow: hidden;
-        // font-size: 14px;
         position: relative;
         color: $color-font-white;
         max-height: 400px;
@@ -54,7 +21,6 @@
         // border-right: none;
         // border-image: linear-gradient(to right ,#eeeff1 50%,  transparent 100%, transparent 70%, #325a62 40%);
         // border-image-slice: 2;
-        
     }
 
     .hero__notice::before {
@@ -79,24 +45,6 @@
         color: $color-font-white;
     }
 
-    .hero__notice .card {
-        color: $color-font-white;
-        background: transparent;
-        border: none;
-        box-shadow: none;
-    }
-
-    .hero__notice .card-title {
-        font-size: 14px;
-        font-weight: 600;
-    }
-
-    .hero__notice .card-text {
-        font-size: 14px;
-        font-weight: 400;
-        color: #f2f3f0;
-    }
-
     .hero__notice--title {
         padding-top: 1.5rem;
         padding-bottom: 1.2rem;
@@ -110,28 +58,6 @@
         .hero__notice {
             margin: 12px;
             width: 95%;
-        }
-
-        .hero__notice .card {
-            color: $color-font-white;
-            background: transparent;
-            border: none;
-            height: 100%;
-        }
-
-        .carousel .badge {
-            font-size: 12px;
-            font-weight: 400;
-            background-color: $color-accent;
-        }
-
-        .carousel-caption {
-            padding-top: 0.5rem;
-        }
-
-        .carousel-caption h4 {
-            font-size: 18px;
-            margin-top: 2rem;
         }
     }
 
@@ -147,22 +73,6 @@
         ul {
             padding-left: 24px;
         }
-        .card {
-            .card-body {
-                padding-left: 8px;
-
-                .card-title {
-                    font-weight: 500;
-                }
-                .card-text {
-                    font-size: 13px;
-                }
-            }
-        }
-        .carousel-caption h4 {
-            font-size: 16px;
-            margin-top: 1rem;
-        }
     }
 
     @media (min-width: 768px) and (max-width: 991px) {
@@ -170,55 +80,6 @@
         .hero__notice {
             margin: 12px;
             width: 95%;
-        }
-
-        .hero__notice .card {
-            color: $color-font-white;
-            background: transparent;
-            border: none;
-            height: 100%;
-        }
-
-        .carousel .badge {
-            font-size: 12px;
-            font-weight: 400;
-            background-color: $color-accent;
-        }
-
-        .carousel-caption {
-            padding-top: 0.5rem;
-        }
-
-        .carousel-caption h4 {
-            font-size: 20px;
-            margin-top: 3rem;
-        }
-    }
-
-
-    @media (min-width: 992px) and (max-width: 1399px) {
-
-        .carousel-inner {
-
-            img {
-                height: 400px;
-                border-radius: 8px;
-            }
-        }
-
-        .carousel-caption h4 {
-            font-size: 20px;
-            margin-top: 1rem;
-        }
-        
-        .hero__notice {
-
-            .card-title {
-                font-size: 14px;
-            }
-            .card-text {
-                font-size: 13px;
-            }
         }
     }
 }

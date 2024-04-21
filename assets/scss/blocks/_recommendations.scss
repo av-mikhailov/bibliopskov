@@ -52,7 +52,7 @@
     .recommendations__body {
         position: relative;
 
-        .card-img-overlay {
+        /* .card-img-overlay {
             background: linear-gradient(180deg, transparent, rgb(52, 58, 64, 0.85));
             padding: 16px;
         }
@@ -60,15 +60,15 @@
             position: absolute;
             bottom: 4px;
             padding-right: 16px;
-        }
+        } */
     }
-    .card:hover {
+   /*  .card:hover {
         top: -5px;
     
         .link-underline {
             background-size: 100% 2px;
         }
-    }
+    } */
     
     @media screen and (max-width: 500px) {
         .recommendations__header {
@@ -99,13 +99,17 @@
             }
         }
         .recommendations__body {
-            .card-img-overlay {
+            /* .card-img-overlay {
                 padding: 8px;
             }
             .card-title {
                 font-size: 14px;
                 line-height: 1.2;
-            }
+            } */
+        }
+        .row {
+            --bs-gutter-y: 1rem;
+            --bs-gutter-x: 1rem;
         }
     }
 }
