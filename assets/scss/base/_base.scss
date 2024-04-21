@@ -331,6 +331,105 @@ a {
             font-weight: 400;
         }
     }
+
+    @media screen and (max-width: 767px) {
+        .sites {
+            .background {
+                position: absolute;
+                z-index: 90;
+                right: -1000em;
+                top: 0;
+                left: -5.75rem; 
+                bottom: 0;
+                background: #356169;
+                background-size: 12% auto;
+                border-radius: 8px 0 0 8px;
+                pointer-events: none;
+            }
+        }
+    }
+
+    @media screen and (max-width: 500px) {
+        padding: 0 0 80px 0;
+
+        .news {
+            padding-top: 2rem;
+            padding-bottom: 1rem;
+
+            .row {
+                --bs-gutter-y: 1rem;
+                --bs-gutter-x: 1rem;
+            }
+        }
+
+        .services {
+            .row {
+                --bs-gutter-y: 1rem;
+                --bs-gutter-x: 1rem;
+            }
+    
+            .bx {
+                font-size: 32px;
+            }
+    
+            .container {
+                padding-top: 4.25rem;
+                padding-bottom: 4.25rem;
+            }
+
+            .background {
+                position: absolute;
+                z-index: 100;
+                left: -1000em;
+                top: 0;
+                right: -5.75rem; 
+                bottom: 0;
+                background: #f7f3ec;
+                border-radius: 0px 8px 8px 0px;
+                pointer-events: none;
+            }
+        }
+
+        .sites {
+            .container {
+                padding-top: 6.25rem;
+                padding-bottom: 3.25rem;
+            }
+    
+            .sites-content {
+                position: relative;
+                z-index: 500;
+                
+                .sites__header {
+                    padding-top: 40px;
+                    padding-bottom: 40px;
+            
+                    h2 {
+                        font-size: 20px;
+                    }
+                }
+
+                .sites__body {
+                    p {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+
+        .events {
+            padding-bottom: 1rem;
+
+            .card-title {
+                font-weight: 400;
+            }
+
+            .row {
+                --bs-gutter-y: 1rem;
+                --bs-gutter-x: 1rem;
+            }
+        }
+    }
 }
 
 .lawcentre {
@@ -451,6 +550,66 @@ a {
             pointer-events: none;
         }
     }
+
+    @media screen and (max-width: 767px) {
+        .lawyer {
+            .background {
+                right: -12px;
+                top: 0;
+                left: -12px; 
+                bottom: 0;
+                border-radius: 8px 8px 8px 8px;
+            }
+        }
+    }
+
+    @media screen and (max-width: 500px) {
+        padding: 0 0 48px 0;
+    
+        .services {
+            position: relative;
+            overflow: hidden;
+    
+            .bx {
+                color: $color-font-accent;
+                font-size: 32px;
+            }
+    
+            .services-content {
+                position: relative;
+                z-index: 500;
+
+                .row {
+                    --bs-gutter-y: 1rem;
+                    --bs-gutter-x: 1rem;
+                }
+            }
+        }
+    
+        .lawyer {
+            .lawyer-content {
+                .lawyer__header {
+                    padding-top: 24px;
+                    padding-bottom: 32px;
+                    text-align: center;
+            
+                    h2 {
+                        font-size: 26px;
+                    }
+                }
+                
+                .lawyer__footer {
+                    padding: 16px 16px 16px 16px;
+                    color: $color-font-primary;
+                }
+            }
+        }
+
+        .news__body .row {
+            --bs-gutter-y: 1rem;
+            --bs-gutter-x: 1rem;
+        }
+    }
 }
 
 @media screen and (max-width: 500px) {
@@ -565,253 +724,4 @@ a {
             left: calc(50% - 50px);
         }
     }
-
-    .kids {
-        padding: 0 0 80px 0;
-
-        .news {
-            padding-top: 2rem;
-            padding-bottom: 1rem;
-
-            .row {
-                --bs-gutter-y: 1rem;
-                --bs-gutter-x: 1rem;
-            }
-        }
-
-        .services {
-            position: relative;
-            overflow: hidden;
-
-            .row {
-                --bs-gutter-y: 1rem;
-                --bs-gutter-x: 1rem;
-            }
-    
-            .bx {
-                color: $color-font-accent;
-                font-size: 32px;
-            }
-    
-            .container {
-                padding-top: 4.25rem;
-                padding-bottom: 4.25rem;
-                position: relative;
-            }
-    
-            .services-content {
-                position: relative;
-                z-index: 500;
-            }
-
-            .background {
-                position: absolute;
-                z-index: 100;
-                left: -1000em;
-                top: 0;
-                right: -5.75rem; 
-                bottom: 0;
-                background: #f7f3ec;
-                border-radius: 0px 8px 8px 0px;
-                pointer-events: none;
-            }
-        }
-
-        .sites {
-            position: relative;
-            overflow: hidden;
-            padding-top: 10rem;
-            margin-top: -20rem;
-            z-index: 90;
-    
-            .container {
-                padding-top: 6.25rem;
-                padding-bottom: 3.25rem;
-                position: relative;
-            }
-    
-            .sites-content {
-                position: relative;
-                z-index: 500;
-                
-                .sites__header {
-                    padding-top: 40px;
-                    padding-bottom: 40px;
-            
-                    h2 {
-                        font-size: 20px;
-                        font-family: $font-accent;
-                        color: #ffffff;
-                    }
-                }
-
-                .sites__body {
-                    p {
-                        font-size: 14px;
-                    }
-                }
-            }
-
-            .background {
-                position: absolute;
-                z-index: 90;
-                right: -1000em;
-                top: 0;
-                left: -5.75rem; 
-                bottom: 0;
-                background: #356169;
-                background-size: 12% auto;
-                border-radius: 8px 0 0 8px;
-                pointer-events: none;
-            }
-        }
-
-        .events {
-            padding-bottom: 1rem;
-
-            .card-title {
-                font-weight: 400;
-            }
-
-            .row {
-                --bs-gutter-y: 1rem;
-                --bs-gutter-x: 1rem;
-            }
-        }
-    }
-
-    .lawcentre {
-        padding: 0 0 48px 0;
-    
-        .services {
-            position: relative;
-            overflow: hidden;
-    
-            .bx {
-                color: $color-font-accent;
-                font-size: 32px;
-            }
-    
-            .services-content {
-                position: relative;
-                z-index: 500;
-
-                .row {
-                    --bs-gutter-y: 1rem;
-                    --bs-gutter-x: 1rem;
-                }
-            }
-
-            .background {
-                position: absolute;
-                z-index: 100;
-                left: -1000em;
-                top: 0;
-                right: -5.75rem; 
-                bottom: 0;
-                background: #f7f3ec;
-                border-radius: 0px 8px 8px 0px;
-                pointer-events: none;
-            }
-        }
-    
-        .lawyer {
-            position: relative;
-            overflow: hidden;
-            padding-top: 1rem;
-            z-index: 90;
-    
-            .container {
-                padding-top: 1.25rem;
-                padding-bottom: 1.25rem;
-                position: relative;
-            }
-    
-            .lawyer-content {
-                position: relative;
-                z-index: 500;
-    
-                .lawyer__header {
-                    padding-top: 24px;
-                    padding-bottom: 32px;
-                    text-align: center;
-            
-                    h2 {
-                        font-size: 26px;
-                        font-family: $font-accent;
-                        color: $color-main
-                    }
-                }
-
-                .lawyer__body {
-    
-                    /* .appointment-card {
-                        background-color: #356169;
-                        color: #ffffff;
-                        margin-left: 0px;
-                        padding: 16px 16px 16px 16px;
-    
-                        .card-title {
-                            font-size: 18px;
-                            font-family: $font-main;
-                            text-transform: uppercase;
-                            padding-bottom: 16px;
-                        }
-                        h3 {
-                            font-size: 18px;
-                        }
-                        li span {
-                            font-size: 14px;
-                        }
-                    }
-    
-                    .schedule-card {
-                        padding: 24px 16px 16px 16px;
-                        background-color: #356169;
-    
-                        ul li {
-                            height: 60%;
-                        }
-    
-                        li {
-                            color: $color-accent;
-                        }
-                    
-                        li span {
-                            h5 {
-                                font-size: 18px;
-                            }
-                            p {
-                                font-size: 14px;
-                            }
-                        }
-                    } */
-                    
-                }
-                
-                .lawyer__footer {
-                    padding: 16px 16px 16px 16px;
-                    color: $color-font-primary;
-                }
-            }
-
-            .background {
-                position: absolute;
-                z-index: 100;
-                right: -1000em;
-                top: 0;
-                left: 12px; 
-                bottom: 0;
-                background-color: #f7f3ec;
-                border-radius: 8px 0px 0px 8px;
-                pointer-events: none;
-            }
-        }
-
-        .news__body .row {
-            --bs-gutter-y: 1rem;
-            --bs-gutter-x: 1rem;
-        }
-    }
 }
-

@@ -289,6 +289,83 @@ a:hover {
 .kids .events .card-title {
   font-weight: 400;
 }
+@media screen and (max-width: 767px) {
+  .kids .sites .background {
+    position: absolute;
+    z-index: 90;
+    right: -1000em;
+    top: 0;
+    left: -5.75rem;
+    bottom: 0;
+    background: #356169;
+    background-size: 12% auto;
+    border-radius: 8px 0 0 8px;
+    pointer-events: none;
+  }
+}
+@media screen and (max-width: 500px) {
+  .kids {
+    padding: 0 0 80px 0;
+  }
+  .kids .news {
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+  }
+  .kids .news .row {
+    --bs-gutter-y: 1rem;
+    --bs-gutter-x: 1rem;
+  }
+  .kids .services .row {
+    --bs-gutter-y: 1rem;
+    --bs-gutter-x: 1rem;
+  }
+  .kids .services .bx {
+    font-size: 32px;
+  }
+  .kids .services .container {
+    padding-top: 4.25rem;
+    padding-bottom: 4.25rem;
+  }
+  .kids .services .background {
+    position: absolute;
+    z-index: 100;
+    left: -1000em;
+    top: 0;
+    right: -5.75rem;
+    bottom: 0;
+    background: #f7f3ec;
+    border-radius: 0px 8px 8px 0px;
+    pointer-events: none;
+  }
+  .kids .sites .container {
+    padding-top: 6.25rem;
+    padding-bottom: 3.25rem;
+  }
+  .kids .sites .sites-content {
+    position: relative;
+    z-index: 500;
+  }
+  .kids .sites .sites-content .sites__header {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .kids .sites .sites-content .sites__header h2 {
+    font-size: 20px;
+  }
+  .kids .sites .sites-content .sites__body p {
+    font-size: 14px;
+  }
+  .kids .events {
+    padding-bottom: 1rem;
+  }
+  .kids .events .card-title {
+    font-weight: 400;
+  }
+  .kids .events .row {
+    --bs-gutter-y: 1rem;
+    --bs-gutter-x: 1rem;
+  }
+}
 
 .lawcentre {
   padding: 0 0 40px 0;
@@ -392,6 +469,52 @@ a:hover {
   border-radius: 8px 0px 0px 8px;
   pointer-events: none;
 }
+@media screen and (max-width: 767px) {
+  .lawcentre .lawyer .background {
+    right: -12px;
+    top: 0;
+    left: -12px;
+    bottom: 0;
+    border-radius: 8px 8px 8px 8px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .lawcentre {
+    padding: 0 0 48px 0;
+  }
+  .lawcentre .services {
+    position: relative;
+    overflow: hidden;
+  }
+  .lawcentre .services .bx {
+    color: #FFA144;
+    font-size: 32px;
+  }
+  .lawcentre .services .services-content {
+    position: relative;
+    z-index: 500;
+  }
+  .lawcentre .services .services-content .row {
+    --bs-gutter-y: 1rem;
+    --bs-gutter-x: 1rem;
+  }
+  .lawcentre .lawyer .lawyer-content .lawyer__header {
+    padding-top: 24px;
+    padding-bottom: 32px;
+    text-align: center;
+  }
+  .lawcentre .lawyer .lawyer-content .lawyer__header h2 {
+    font-size: 26px;
+  }
+  .lawcentre .lawyer .lawyer-content .lawyer__footer {
+    padding: 16px 16px 16px 16px;
+    color: #356169;
+  }
+  .lawcentre .news__body .row {
+    --bs-gutter-y: 1rem;
+    --bs-gutter-x: 1rem;
+  }
+}
 
 @media screen and (max-width: 500px) {
   .breadcrumbs {
@@ -491,216 +614,6 @@ a:hover {
     background: #FFA144;
     margin-top: 8px;
     left: calc(50% - 50px);
-  }
-  .kids {
-    padding: 0 0 80px 0;
-  }
-  .kids .news {
-    padding-top: 2rem;
-    padding-bottom: 1rem;
-  }
-  .kids .news .row {
-    --bs-gutter-y: 1rem;
-    --bs-gutter-x: 1rem;
-  }
-  .kids .services {
-    position: relative;
-    overflow: hidden;
-  }
-  .kids .services .row {
-    --bs-gutter-y: 1rem;
-    --bs-gutter-x: 1rem;
-  }
-  .kids .services .bx {
-    color: #FFA144;
-    font-size: 32px;
-  }
-  .kids .services .container {
-    padding-top: 4.25rem;
-    padding-bottom: 4.25rem;
-    position: relative;
-  }
-  .kids .services .services-content {
-    position: relative;
-    z-index: 500;
-  }
-  .kids .services .background {
-    position: absolute;
-    z-index: 100;
-    left: -1000em;
-    top: 0;
-    right: -5.75rem;
-    bottom: 0;
-    background: #f7f3ec;
-    border-radius: 0px 8px 8px 0px;
-    pointer-events: none;
-  }
-  .kids .sites {
-    position: relative;
-    overflow: hidden;
-    padding-top: 10rem;
-    margin-top: -20rem;
-    z-index: 90;
-  }
-  .kids .sites .container {
-    padding-top: 6.25rem;
-    padding-bottom: 3.25rem;
-    position: relative;
-  }
-  .kids .sites .sites-content {
-    position: relative;
-    z-index: 500;
-  }
-  .kids .sites .sites-content .sites__header {
-    padding-top: 40px;
-    padding-bottom: 40px;
-  }
-  .kids .sites .sites-content .sites__header h2 {
-    font-size: 20px;
-    font-family: "Alice", serif;
-    color: #ffffff;
-  }
-  .kids .sites .sites-content .sites__body p {
-    font-size: 14px;
-  }
-  .kids .sites .background {
-    position: absolute;
-    z-index: 90;
-    right: -1000em;
-    top: 0;
-    left: -5.75rem;
-    bottom: 0;
-    background: #356169;
-    background-size: 12% auto;
-    border-radius: 8px 0 0 8px;
-    pointer-events: none;
-  }
-  .kids .events {
-    padding-bottom: 1rem;
-  }
-  .kids .events .card-title {
-    font-weight: 400;
-  }
-  .kids .events .row {
-    --bs-gutter-y: 1rem;
-    --bs-gutter-x: 1rem;
-  }
-  .lawcentre {
-    padding: 0 0 48px 0;
-  }
-  .lawcentre .services {
-    position: relative;
-    overflow: hidden;
-  }
-  .lawcentre .services .bx {
-    color: #FFA144;
-    font-size: 32px;
-  }
-  .lawcentre .services .services-content {
-    position: relative;
-    z-index: 500;
-  }
-  .lawcentre .services .services-content .row {
-    --bs-gutter-y: 1rem;
-    --bs-gutter-x: 1rem;
-  }
-  .lawcentre .services .background {
-    position: absolute;
-    z-index: 100;
-    left: -1000em;
-    top: 0;
-    right: -5.75rem;
-    bottom: 0;
-    background: #f7f3ec;
-    border-radius: 0px 8px 8px 0px;
-    pointer-events: none;
-  }
-  .lawcentre .lawyer {
-    position: relative;
-    overflow: hidden;
-    padding-top: 1rem;
-    z-index: 90;
-  }
-  .lawcentre .lawyer .container {
-    padding-top: 1.25rem;
-    padding-bottom: 1.25rem;
-    position: relative;
-  }
-  .lawcentre .lawyer .lawyer-content {
-    position: relative;
-    z-index: 500;
-  }
-  .lawcentre .lawyer .lawyer-content .lawyer__header {
-    padding-top: 24px;
-    padding-bottom: 32px;
-    text-align: center;
-  }
-  .lawcentre .lawyer .lawyer-content .lawyer__header h2 {
-    font-size: 26px;
-    font-family: "Alice", serif;
-    color: #356169;
-  }
-  .lawcentre .lawyer .lawyer-content .lawyer__body {
-    /* .appointment-card {
-        background-color: #356169;
-        color: #ffffff;
-        margin-left: 0px;
-        padding: 16px 16px 16px 16px;
-
-        .card-title {
-            font-size: 18px;
-            font-family: $font-main;
-            text-transform: uppercase;
-            padding-bottom: 16px;
-        }
-        h3 {
-            font-size: 18px;
-        }
-        li span {
-            font-size: 14px;
-        }
-    }
-
-    .schedule-card {
-        padding: 24px 16px 16px 16px;
-        background-color: #356169;
-
-        ul li {
-            height: 60%;
-        }
-
-        li {
-            color: $color-accent;
-        }
-
-        li span {
-            h5 {
-                font-size: 18px;
-            }
-            p {
-                font-size: 14px;
-            }
-        }
-    } */
-  }
-  .lawcentre .lawyer .lawyer-content .lawyer__footer {
-    padding: 16px 16px 16px 16px;
-    color: #356169;
-  }
-  .lawcentre .lawyer .background {
-    position: absolute;
-    z-index: 100;
-    right: -1000em;
-    top: 0;
-    left: 12px;
-    bottom: 0;
-    background-color: #f7f3ec;
-    border-radius: 8px 0px 0px 8px;
-    pointer-events: none;
-  }
-  .lawcentre .news__body .row {
-    --bs-gutter-y: 1rem;
-    --bs-gutter-x: 1rem;
   }
 }
 .header .header__top {
@@ -1028,6 +941,30 @@ a:hover {
 }
 .card--appointment:hover {
   top: 0px;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .card--appointment {
+    padding: 24px;
+  }
+  .card--appointment .card-title {
+    font-size: 18px;
+  }
+}
+@media (min-width: 501px) and (max-width: 767px) {
+  .card--appointment {
+    margin-left: 0px;
+    padding: 16px 16px 16px 16px;
+  }
+  .card--appointment .card-title {
+    font-size: 18px;
+    padding-bottom: 16px;
+  }
+  .card--appointment h3 {
+    font-size: 18px;
+  }
+  .card--appointment li span {
+    font-size: 14px;
+  }
 }
 @media screen and (max-width: 500px) {
   .card--appointment {
@@ -1402,6 +1339,14 @@ a:hover {
 }
 .card--schedule:hover {
   top: 0px;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .card--schedule {
+    padding: 40px 16px 16px 16px;
+  }
+  .card--schedule .card-title {
+    font-size: 18px;
+  }
 }
 @media screen and (max-width: 500px) {
   .card--schedule {
