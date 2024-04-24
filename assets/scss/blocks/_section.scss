@@ -117,10 +117,6 @@ section {
         }
     }
 
-    &.books {
-
-    }
-
     &.breadcrumbs {
         padding: 0px;
         border-bottom: 1px solid #EEEFF1;
@@ -143,96 +139,7 @@ section {
         }
     }
 
-    /* &.content {
-        padding: 0px 0px 0px 0px;
-
-        .content__header {
-            padding-top: 48px;
-        
-            h1 {
-                font-size: 2rem;
-            }
-            h1::after {
-                content: "";
-                position: relative;
-                display: block;
-                width: 80px;
-                height: 3px;
-                background: $color-accent;
-                margin-top: 8px;
-            }
-
-            .title {
-                background-color: $color-bg-gray;
-                padding: 16px 0px 16px 0px;
-                border-bottom-left-radius: 8px;
-                border-bottom-right-radius: 8px;
-            
-                h3 {
-                    font-size: 26px;
-                    font-family: $font-accent;
-                    color: $color-font-primary;
-                    text-transform: uppercase;
-                }
-            
-                h3::after {
-                    content: "";
-                    position: relative;
-                    display: block;
-                    width: 80px;
-                    height: 3px;
-                    background: $color-accent;
-                    margin-top: 8px;
-                    left: calc(50% - 50px);
-                }
-            }
-        }
-        
-        .content__body {
-            padding-bottom: 48px;
-
-            h4 {
-                font-size: 24px;
-                font-family: $font-accent;
-                color: $color-font-primary;
-            }
-
-            h4::after {
-                content: "";
-                position: relative;
-                display: block;
-                width: 40px;
-                height: 3px;
-                background: $color-accent;
-                margin-top: 4px;
-            }
-
-            .content__nav nav ul {
-                padding-left: 0;
-                margin-bottom: 0;
-                list-style: none;
-            }
-            
-            .content__nav nav a {
-                display: block;
-                padding: 0.125rem 0 0.125rem 0.75rem;
-                color: inherit;
-                text-decoration: none;
-                border-left: 0.225rem solid transparent;
-            }
-            
-            .content__nav nav a:hover {
-                color: $color-font-light;
-            }
-            
-            .content__nav nav a.active {
-                color: $color-font-accent;
-                border-left-color: $color-font-accent;
-            }
-        }
-    } */
-
-    &.category {
+    &.page {
         padding: 0px 0px 24px 0px;
 
         .section__header {
@@ -252,22 +159,6 @@ section {
                 height: 3px;
                 background: $color-accent;
                 margin-top: 8px;
-            }
-    
-            h3 {
-                font-size: 24px;
-                font-family: $font-accent;
-                color: $color-font-primary;
-            }
-    
-            h3::after {
-                content: "";
-                position: relative;
-                display: block;
-                width: 40px;
-                height: 3px;
-                background: $color-accent;
-                margin-top: 4px;
             }
     
             h4 {
@@ -348,8 +239,30 @@ section {
             padding: 16px 0px 16px 0px;
             border-bottom-left-radius: 8px;
             border-bottom-right-radius: 8px;
+
+            h1 {
+                position: relative;
+                font-size: 26px;
+                font-family: $font-accent;
+                color: $color-font-primary;
+                text-transform: uppercase;
+                padding-bottom: 8px;
+            }
         
-            h3 {
+            h1::after {
+                content: "";
+                position: absolute;
+                display: block;
+                width: 80px;
+                height: 3px;
+                background: $color-accent;
+                margin: auto;
+                left: 0;
+                right: 0;
+                bottom: 0;
+            }
+        
+           /*  h3 {
                 font-size: 26px;
                 font-family: $font-accent;
                 color: $color-font-primary;
@@ -365,13 +278,21 @@ section {
                 background: $color-accent;
                 margin-top: 8px;
                 left: calc(50% - 50px);
+            } */
+        }
+
+        @media (min-width: 768px) and (max-width: 991px) {
+            .section__header {
+                h2 {
+                    font-size: 28px;
+                }
             }
         }
     
         @media screen and (max-width: 500px) {
             .section__header {
                 padding-bottom: 24px;
-                
+
                 h2 {
                     font-size: 20px;
                 }
@@ -392,6 +313,33 @@ section {
             .section__footer {
                 padding: 24px;
             }
+
+            .title {
+                background-color: $color-bg-gray;
+                padding: 16px 0px 16px 0px;
+                border-bottom-left-radius: 8px;
+                border-bottom-right-radius: 8px;
+    
+                h1 {
+                    position: relative;
+                    font-size: 20px;
+                    text-transform: uppercase;
+                    padding-bottom: 8px;
+                }
+            
+                h1::after {
+                    content: "";
+                    position: absolute;
+                    display: block;
+                    width: 40px;
+                    height: 3px;
+                    background: $color-accent;
+                    margin: auto;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                }
+            }
     
             .row {
                 --bs-gutter-y: 1rem;
@@ -406,22 +354,6 @@ section {
         }
     }
 
-    &.hero {
-
-    }
-
-    &.kids {
-
-    }
-
-    &.lawcentre {
-
-    }
-
-    &.library {
-
-    }
-
     &.news {
         .section__header {
             padding-bottom: 24px;
@@ -434,10 +366,6 @@ section {
         .section__header {
             padding-bottom: 24px;
         }
-    }
-
-    &.references {
-        
     }
 
     &.services {
